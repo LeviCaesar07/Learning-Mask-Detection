@@ -32,7 +32,7 @@ while True:
         cv2.rectangle(im,(x,y-40),(x+w,y),GR_dict[label],-1)
         cv2.putText(im, results[label], (x, y-10),cv2.FONT_HERSHEY_SIMPLEX,0.8,(255,255,255),2)
     
-    cv2.imshow('LIVE',   im)
+    cv2.imshow('CAM',   im)
     key = cv2.waitKey(10)
     
     if key == 27: 
